@@ -7,6 +7,11 @@ The normal React version in this `create-next-app` is `18.2.0`
 This causes types errors when using libraries like `react-hook-form` because of version mismatch:
 
 ```
+Warning: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
+1. You might have mismatching versions of React and the renderer (such as React DOM)
+2. You might be breaking the Rules of Hooks
+3. You might have more than one copy of React in the same app
+See https://reactjs.org/link/invalid-hook-call for tips about how to debug and fix this problem.
 error - TypeError: Cannot read properties of null (reading 'useRef')
     at Object.useRef (/Users/eddeee888/Projects/eddeee888/next-compiled-react/next-compiled-react/node_modules/react/cjs/react.development.js:1630:21)
     at useForm (file:///Users/eddeee888/Projects/eddeee888/next-compiled-react/next-compiled-react/node_modules/react-hook-form/dist/index.esm.mjs:2267:32)
